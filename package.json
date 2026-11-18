@@ -1,0 +1,16 @@
+{
+  "name": "breaklog",
+  "version": "0.1.0",
+  "description": "Terminal tool that tracks work time and warns you to take breaks",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "breaklog": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
