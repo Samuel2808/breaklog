@@ -50,6 +50,18 @@ npm link
 | `BREAKLOG_FILE` | `~/.breaklog/data.json` | Where the history is saved. |
 | `BREAKLOG_LIMIT_MINUTES` | `90` | Minutes of work allowed before the warning. |
 
+## Clearing your history
+
+Your sessions and breaks are saved in `~/.breaklog/data.json`, or in the file named by
+`BREAKLOG_FILE` if you set it. To start again with an empty history, delete that file:
+
+```bash
+rm ~/.breaklog/data.json
+```
+
+This permanently deletes all saved sessions and breaks, including a running session.
+breaklog creates the file again the next time you run `start` or `break`.
+
 ## Run the tests
 
 ```bash
